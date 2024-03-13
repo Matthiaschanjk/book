@@ -1,0 +1,32 @@
+<%- include ('headers.ejs'); -%>
+<div class="container mt-5">
+    <div id="logo">
+        <div class="column">
+            <img id="image-logo"src="/images/book_logo.png" alt="book logo">
+            <div id="logo">
+                <h1>THE BOOK WORMS</h1>
+            </div>
+            <h2>A reader lives a <strong>thousand</strong> lives before he dies, and the one who doesn't read, lives just one.</h2>
+        </div>
+    </div>
+    <%# TODO: Fill cards within the div %>
+    <%# the div can only fit at most 6 reviews %>
+    <div id="card-div">
+      <% for(let data of results) {%>
+        <form action="/view" method="post">
+          <div class="card mt-2">
+            <img class="card-img-top mt-2" src="https://covers.openlibrary.org/b/isbn/ <%= data.ibsn %>-L.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text"> <%= data.title %> </p>
+              <button type="submit" name="id" value="<%= data.id %>" class="btn btn-primary">View</button>
+            </div>
+          </div>
+          </form>
+        <% } %>
+      <div id="column">
+          <a class="btn btn-primary" href="/add">Write a review</a>
+          <a type="submit" class="btn btn-primary" href="/random">Random Review</a>
+      </div>
+    </div>
+</div>
+<%- include('footers.ejs'); -%>

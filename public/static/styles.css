@@ -1,0 +1,140 @@
+body {
+    background-color: #cdcfc0;
+    background-image: url('/images/background_image.png');
+    background-repeat: repeat-y;
+    height: 100%;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-transform: uppercase;
+  width: 200px;
+  overflow-wrap: break-word;  
+  word-wrap: break-word; 
+  word-break: break-word;
+  font-size: 3rem;
+  margin-bottom: -20px;
+  margin-top: 0;
+  font-weight: light;
+}
+
+h2 {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-left: 2rem;
+    text-align: justify;
+    margin-right: 4rem;
+    margin-top: 1rem;
+    width: 500px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+}
+
+h4 {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+label {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: light;
+}
+
+input {
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 12rem;
+    height: 15rem;   
+}
+
+.btn-primary {
+    border: #caceb0;
+    background-color: #bfc880;
+}
+
+.btn-primary:hover{
+    background-color: #dee894;
+}
+
+.btn-primary:active{
+    background-color: #dee894;
+}
+
+.card {
+    text-align: center;
+}
+
+.card-img-top {
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 130px;
+}
+
+#logo {
+    display: inline-flex;
+}
+
+
+#column, .column {
+    flex-direction: column;
+}
+
+#card-div {
+    background-color: #EFEBE2;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+#image-logo {
+    height: 200px;
+    width: auto;
+    margin-top: 4rem;
+}
+
+#add-items {
+    height: 700px;
+    width: 800px;
+    background-color: #EFEBE2;
+}
+
+#add-a-review {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+}
+
+#add-textarea {
+    width: 80%;
+    height: 200px;
+}
+
+#viewTitle {
+    width: 100rem;
+    text-align: center;
+}

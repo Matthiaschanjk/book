@@ -1,0 +1,14 @@
+<%- include('headers.ejs') -%>
+
+<div class="container column">
+    <h1 id="viewTitle"><%= data.title %></h1>
+    <img class="mt-5 mb-5" src="https://covers.openlibrary.org/b/isbn/<%= data.ibsn %>-L.jpg" alt="Card image cap">
+    <p><%= data.content %></p>
+    <h4> by <%= data.author %></h4>
+    <form method="post" action="/edit">
+        <button type="submit" name="id" value="<%= data.id %>" class="btn btn-primary">Edit</button>
+        <a class="btn btn-primary" href="/">Back</a>
+    </form>
+</div>
+
+<%- include('footers.ejs') -%>

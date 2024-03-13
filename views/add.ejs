@@ -1,0 +1,20 @@
+<%- include('headers.ejs') -%>
+<div class="container">
+    <div class="mt-5" id="add-items">
+        <h1 class="mt-2" id="add-a-review">Add a review</h1>
+        <div style="margin-left: 10rem;">
+            <form class="mt-5 form-group" action="/add" method="post">
+                <label>book title</label><p></p>
+                <input type="text" name="title" autofocus> <p></p>
+                <label>book ibsn</label> <p></p>
+                <input type="text" name="ibsn"> <p></p>
+                <label>your name</label> <p></p>
+                <input type="text" name="author"> <p></p>
+                <label>content</label> <p></p>
+                <textarea id="add-textarea"class="form-control" name="content" placeholder="What do you think about this book?"></textarea> <p></p>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<%- include('footers.ejs') -%>

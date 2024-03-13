@@ -1,0 +1,23 @@
+<%- include('headers.ejs') -%>
+<div class="container">
+    <div class="mt-5" id="add-items">
+        <h1 class="mt-2" id="add-a-review">Edit your Review</h1>
+        <div style="margin-left: 10rem;">
+            <form class="mt-5 form-group" action="/edit" method="post">
+                <label>book title</label><p></p>
+                <input type="text" name="title" autofocus value="<%= data[0].title %>"> <p></p>
+                <label>book ibsn</label> <p></p>
+                <input type="text" name="ibsn" value="<%= data[0].ibsn %>"> <p></p>
+                <label>your name</label> <p></p>
+                <input type="text" name="author" value="<%= data[0].author %>"> <p></p>
+                <label>content</label> <p></p>
+                <textarea id="add-textarea"class="form-control" name="content" placeholder="What do you think about this book?"><%= data[0].content %></textarea> <p></p>
+                <button class="btn btn-primary float-start me-2" name="id" value="<%= data[0].id %>" type="submit">Submit</button>
+            </form>
+            <form action="/delete" method="post" class="mb-5">
+                <button class="btn btn-danger" name="id" value="<%= data[0].id %>" type="submit">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+<%- include('footers.ejs') -%>
