@@ -2,6 +2,8 @@
 >Readers are leaders!
 
 ![Book](https://github.com/Matthiaschanjk/book/assets/90817000/2c05b632-9d3f-42e9-ba5f-fa6b35e18705)
+![Screenshot 2024-03-13 192556](https://github.com/Matthiaschanjk/book/assets/90817000/7818c1c8-0ed9-480b-8e51-d87cd3005164)
+![Screenshot 2024-03-13 192521](https://github.com/Matthiaschanjk/book/assets/90817000/8f5274dd-eedc-4457-a371-f6c8047c09f2)
 
 
 ## What's this?
